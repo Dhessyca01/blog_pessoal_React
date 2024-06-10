@@ -77,10 +77,10 @@ function Cadastro() {
 
   return (
     <>
-      <div className="bg-gradient-to-r from-[#8B4513] to-[#DEB887] text-2xl grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-display">
+      <div className="bg-gradient-to-r from-[#8B4513] to-[#DEB887] text-1xl grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-display">
         <div className="fundoCadastro hidden lg:block"></div>
         <form className='flex justify-center items-center flex-col w-2/3 gap-3' onSubmit={cadastrarNovoUsuario}>
-          <h2 className='text-bold text-6xl'>Cadastrar</h2>
+          <h2 className='text-bold text-5xl'>Cadastrar</h2>
           <div className="flex flex-col w-full">
             <label htmlFor="nome">Nome</label>
             <input

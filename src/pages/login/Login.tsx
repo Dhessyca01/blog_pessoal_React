@@ -40,33 +40,33 @@ function login(e: ChangeEvent<HTMLFormElement>) {
   return (
     <>
       <div className="bg-gradient-to-r from-[#8B4513] to-[#FFD700] grid grid-cols-1 lg:grid-cols-2 h-screen place-items-center font-display ">
-        <form className="flex justify-center items-center flex-col w-1/2 gap-7" onSubmit={login}>
-          <h2 className="text-[#FFF8DC] text-7xl ">Entrar</h2>
-          <div className="text-[#FFF8DC] font-display text-3xl flex flex-col w-full">
+        <form className="flex justify-center items-center flex-col w-1/2 gap-5" onSubmit={login}>
+          <h2 className="text-[#FFF8DC] text-6xl ">Entrar</h2>
+          <div className="text-[#FFF8DC] font-display text-2xl flex flex-col w-full gap-2">
             <label htmlFor="usuario">Usuário</label>
             <input
               type="text"
               id="usuario"
               name="usuario"
               placeholder="Usuario"
-              className="text-[#8B4513] border-4 border-[#DEB887] rounded p-3"
+              className="text-[#8B4513] border-4 border-[#DEB887] rounded p-2"
               value={usuarioLogin.usuario} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <div className="text-[#FFF8DC] font-display text-3xl flex flex-col w-full">
+          <div className="text-[#FFF8DC] font-display text-2xl flex flex-col w-full gap-2">
             <label htmlFor="senha">Senha</label>
             <input
               type="password"
               id="senha"
               name="senha"
               placeholder="Senha"
-              className="text-[#8B4513] border-4 border-[#DEB887] rounded p-3"
+              className="text-[#8B4513] border-4 border-[#DEB887] rounded p-2"
               value={usuarioLogin.senha} 
               onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             />
           </div>
-          <button  type='submit' className="rounded bg-[#FFDEAD] hover:bg-[#FF6347] text-[#0E0E0E] font-bold text-2xl w-1/2 py-3 flex justify-center">
+          <button  type='submit' className="rounded bg-[#FFDEAD] hover:bg-[#FF6347] text-[#0E0E0E] font-bold text-2xl w-1/2 py-2 flex justify-center">
            {isLoading ? <RotatingLines
             strokeColor="CadetBlue"
             strokeWidth="5"
@@ -77,10 +77,12 @@ function login(e: ChangeEvent<HTMLFormElement>) {
             <span>Entrar</span>}
           </button>
 
-          <hr className="text-[#F0E68C] text-2xl border-[#F0E68C] w-full" />
-
           <p>
-           
+          <hr className="text-[#F0E68C] text-2xl border-[#F0E68C] w-full"/
+
+        
+           >
+            
             Ainda não tem uma conta?{''}
 
             <Link to="/cadastro" className="text-[#F0E68C] text-2xl hover:bg-[#8FBC8F] gap-4">
